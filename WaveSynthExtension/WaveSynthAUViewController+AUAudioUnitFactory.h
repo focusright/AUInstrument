@@ -7,9 +7,6 @@
 //
 
 @import CoreAudioKit;
-#import <WaveSynthFramework/WaveSynthFramework.h>
+#import "WaveSynthAUViewController.h"
 
-@interface WaveSynthAUViewController (AUAudioUnitFactory) <AUAudioUnitFactory>
-
-@end
 

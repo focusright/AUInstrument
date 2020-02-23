@@ -15,3 +15,7 @@
 @property (nonatomic)WaveSynthAU *audioUnit;
 
 @end
+
+@interface WaveSynthAUViewController (AUAudioUnitFactory) <AUAudioUnitFactory>
+
+@end

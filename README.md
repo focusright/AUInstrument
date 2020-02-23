@@ -1,4 +1,4 @@
-# AUInstrument
+# AUInstrument (MacOS)
 
 ## note - this exploration pre-dates Apple's own AUv3 Instrument sample code.  Apple's sample code is more current and likely a better example today.
 

@@ -8,12 +8,4 @@
 
 #import "WaveSynthAUViewController+AUAudioUnitFactory.h"
 
-@implementation WaveSynthAUViewController (AUAudioUnitFactory)
 
-- (WaveSynthAU *) createAudioUnitWithComponentDescription:(AudioComponentDescription) desc error:(NSError **)error
-{
-    self.audioUnit = [[WaveSynthAU alloc] initWithComponentDescription:desc error:error];
-    return self.audioUnit;
-}
-
-@end

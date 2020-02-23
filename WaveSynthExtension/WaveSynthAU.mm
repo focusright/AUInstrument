@@ -9,7 +9,7 @@
 #import "WaveSynthAU.h"
 
 #import "BufferedAudioBus.hpp"
-#import "Utility.h"
+#import "Utility.hpp"
 #import "WaveSynthProc.hpp"
 
 @interface WaveSynthAU ()
@@ -56,8 +56,8 @@
                                                                         flags: flags valueStrings:nil dependentParameters:nil];
     AUParameter *waveformParam = [AUParameterTree createParameterWithIdentifier:waveformParamKey name:@"Waveform"
                                                                       address:WaveSynthProc::InstrumentParamWaveform
-                                                                          min:0 max:4 unit:kAudioUnitParameterUnit_Indexed unitName:nil
-                                                                        flags: flags valueStrings:nil dependentParameters:nil];
+                                                                          min:0 max:3 unit:kAudioUnitParameterUnit_Indexed unitName:nil
+                                                                        flags: flags valueStrings:@[@"Sine", @"Sawtooth", @"Square", @"Triangle"] dependentParameters:nil];
 
     // Initialize the parameter values.
     volumeParam.value = 0.1;
@@ -171,7 +171,7 @@
                               const AURenderEvent        *realtimeEventListHead,
                               AURenderPullInputBlock      pullInputBlock)
     {
-        _outputBusBuffer.prepareOutputBufferList(outputData, frameCount, true);
+        self->_outputBusBuffer.prepareOutputBufferList(outputData, frameCount, true);
         state->setBuffers(outputData);		
         state->processWithEvents(timestamp, frameCount, realtimeEventListHead);
         

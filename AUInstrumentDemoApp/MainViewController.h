@@ -6,10 +6,8 @@
 //  Copyright © 2016 Eric George. All rights reserved.
 //
 
-@import UIKit;
+@import AppKit;
 
-#import "MIDIManager.h"
-
-@interface MainViewController : UIViewController<MIDIManagerDelegate>
+@interface MainViewController : NSViewController
 
 @end

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WaveSynthAUViewController">
+            <connections>
+                <outlet property="_volumeSlider" destination="i3U-oC-klc" id="Hkf-t4-Whv"/>
+                <outlet property="_waveformButton" destination="J2f-Id-cwD" id="2hr-47-Mwa"/>
+                <outlet property="_waveformLabel" destination="lba-tZ-RO7" id="J6f-yr-gbg"/>
+                <outlet property="view" destination="rt4-mF-UHZ" id="yQz-9n-eLV"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="rt4-mF-UHZ">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+                    <subviews>
+                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3U-oC-klc">
+                            <rect key="frame" x="100" y="196" width="601" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <sliderCell key="cell" state="on" alignment="left" minValue="0.001" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="MyV-O0-t1b">
+                                <connections>
+                                    <action selector="volumeChanged:" target="-2" id="EIh-Kf-mrO"/>
+                                </connections>
+                            </sliderCell>
+                        </slider>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-Id-cwD">
+                            <rect key="frame" x="325" y="256" width="152" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="Change Waveform" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uzQ-G0-T6H">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <connections>
+                                    <action selector="waveformChanged:" target="-2" id="5m1-T6-Wm4"/>
+                                </connections>
+                            </buttonCell>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lba-tZ-RO7">
+                            <rect key="frame" x="337" y="332" width="126" height="39"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="M1Q-rb-DFL">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="T2C-8u-WUg"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="800" id="d58-A3-fGA"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="c22-O7-iKe" secondAttribute="bottom" id="NKq-dC-1AP"/>
+                <constraint firstItem="c22-O7-iKe" firstAttribute="leading" secondItem="rt4-mF-UHZ" secondAttribute="leading" id="Xs9-WT-Nhd"/>
+                <constraint firstItem="c22-O7-iKe" firstAttribute="top" secondItem="rt4-mF-UHZ" secondAttribute="top" id="hS4-Dd-6Qf"/>
+                <constraint firstAttribute="trailing" secondItem="c22-O7-iKe" secondAttribute="trailing" id="tAx-qv-lDn"/>
+            </constraints>
+            <point key="canvasLocation" x="358" y="-190"/>
+        </view>
+    </objects>
+</document>

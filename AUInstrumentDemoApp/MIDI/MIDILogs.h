@@ -11,9 +11,9 @@
 
 @import CoreMIDI;
 
-void printDevices();
-void printSources();
-void printDestinations();
+//void printDevices();
+//void printSources();
+//void printDestinations();
 
 void LogMidiEventToConsole(uint8_t status,
                            uint8_t channel,
