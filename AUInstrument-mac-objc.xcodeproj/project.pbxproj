@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E0695952403079C0048A9CE /* MIDIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0695902403079B0048A9CE /* MIDIManager.m */; };
-		9E0695962403079C0048A9CE /* MIDILogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0695932403079B0048A9CE /* MIDILogs.m */; };
 		9E0EEAC224019E3200E861FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0EEAC124019E3200E861FB /* main.m */; };
 		9E0EEAC424019E3900E861FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0EEAC324019E3900E861FB /* Assets.xcassets */; };
 		9E0F572524021CF000078F31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F5722240211BB00078F31 /* Main.storyboard */; };
@@ -60,10 +58,6 @@
 
 /* Begin PBXFileReference section */
 		9E06958F240283D60048A9CE /* WaveSynthFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSynthFramework.h; sourceTree = "<group>"; };
-		9E0695902403079B0048A9CE /* MIDIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIDIManager.m; path = AUInstrumentDemoApp/MIDI/MIDIManager.m; sourceTree = SOURCE_ROOT; };
-		9E0695912403079B0048A9CE /* MIDILogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDILogs.h; path = AUInstrumentDemoApp/MIDI/MIDILogs.h; sourceTree = SOURCE_ROOT; };
-		9E0695922403079B0048A9CE /* MIDIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIManager.h; path = AUInstrumentDemoApp/MIDI/MIDIManager.h; sourceTree = SOURCE_ROOT; };
-		9E0695932403079B0048A9CE /* MIDILogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIDILogs.m; path = AUInstrumentDemoApp/MIDI/MIDILogs.m; sourceTree = SOURCE_ROOT; };
 		9E0695942403079C0048A9CE /* MIDIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIConstants.h; path = AUInstrumentDemoApp/MIDI/MIDIConstants.h; sourceTree = SOURCE_ROOT; };
 		9E069597240307C60048A9CE /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = AUInstrumentDemoApp/Utility.h; sourceTree = SOURCE_ROOT; };
 		9E0EEAC124019E3200E861FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,10 +132,6 @@
 				9E0F572F240245C500078F31 /* MIDIEvent.h */,
 				9E0F5730240245C500078F31 /* MIDIEvent.m */,
 				9E0695942403079C0048A9CE /* MIDIConstants.h */,
-				9E0695912403079B0048A9CE /* MIDILogs.h */,
-				9E0695932403079B0048A9CE /* MIDILogs.m */,
-				9E0695922403079B0048A9CE /* MIDIManager.h */,
-				9E0695902403079B0048A9CE /* MIDIManager.m */,
 			);
 			path = MIDIEvent;
 			sourceTree = "<group>";
@@ -328,8 +318,6 @@
 				9E0F5740240245C500078F31 /* WaveSynthProc.mm in Sources */,
 				9E0F573E240245C500078F31 /* WaveSynthAU.mm in Sources */,
 				9E0F573C240245C500078F31 /* DSPKernel.mm in Sources */,
-				9E0695952403079C0048A9CE /* MIDIManager.m in Sources */,
-				9E0695962403079C0048A9CE /* MIDILogs.m in Sources */,
 				9E0F573F240245C500078F31 /* WaveSynthAUViewController.m in Sources */,
 				9E0F5741240245C500078F31 /* Oscillator.m in Sources */,
 			);
