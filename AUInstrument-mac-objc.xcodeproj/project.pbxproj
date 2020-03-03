@@ -59,7 +59,6 @@
 /* Begin PBXFileReference section */
 		9E06958F240283D60048A9CE /* WaveSynthFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveSynthFramework.h; sourceTree = "<group>"; };
 		9E0695942403079C0048A9CE /* MIDIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIConstants.h; path = AUInstrumentDemoApp/MIDI/MIDIConstants.h; sourceTree = SOURCE_ROOT; };
-		9E069597240307C60048A9CE /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = AUInstrumentDemoApp/Utility.h; sourceTree = SOURCE_ROOT; };
 		9E0EEAC124019E3200E861FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E0EEAC324019E3900E861FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E0EEAC524019E4500E861FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,7 +186,6 @@
 				9E0F572E240245C500078F31 /* MIDIEvent */,
 				9E0F5736240245C500078F31 /* Oscillator */,
 				9E0F5729240245C500078F31 /* WaveSynthAUViewController.xib */,
-				9E069597240307C60048A9CE /* Utility.h */,
 				9E0F5734240245C500078F31 /* Utility.hpp */,
 				9E0F5727240245C500078F31 /* WaveSynthAU.h */,
 				9E0F5731240245C500078F31 /* WaveSynthAU.mm */,
